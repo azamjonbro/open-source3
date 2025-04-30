@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\""
+    "start": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "dev": "vite",
+    "test": "jest --watchAll --passWithNoTests",
+    "test:ci": "jest --ci --passWithNoTests"
   },
   "devDependencies": {
     "concurrently": "^8.2.0"
